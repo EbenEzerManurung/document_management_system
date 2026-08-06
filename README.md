@@ -2,7 +2,7 @@
 
 A modern **Enterprise Document Management System (DMS)** built with **Next.js 16.3.0**, **Go (Gin Framework)**, and **MySQL**.
 
-Designed to streamline the entire document lifecycle—from creation and approval to digital signature, QR code verification, version control, and secure archival—through a scalable RESTful architecture and a Progressive Web App (PWA) experience.
+Designed to streamline the entire document lifecycle—from document creation, multi-level approval, digital signatures, advanced QR Code document verification and scanning, version control, and secure archival—through a scalable RESTful architecture and a Progressive Web App (PWA). The system enables fast, secure, and reliable document authentication by allowing users to instantly verify document authenticity and access document information through QR Code scanning.
 
 ---
 
@@ -240,17 +240,19 @@ document_management_system/
 <img width="1918" height="909" alt="image" src="https://github.com/user-attachments/assets/af7a4bda-ca79-45e9-914f-ae7aab31f35d" />
 
 ## Document Approval
-Approve Document:
+### Approve Document:
 <img width="1911" height="789" alt="image" src="https://github.com/user-attachments/assets/df4ee131-45f2-4924-af0c-e8dd3ac92cc2" />
 
-Signature Digital:
+### Signature Digital:
 <img width="1783" height="793" alt="image" src="https://github.com/user-attachments/assets/c2be1b04-6dc3-4b58-ac1d-276af281c93f" />
 
-Report Pdf:
+### Report Pdf:
 <img width="1777" height="904" alt="image" src="https://github.com/user-attachments/assets/19e22c04-ef7a-44e6-93f2-7a6929597d77" />
-Scan QR Document:
+
+### Scan QR Document:
 <img width="1783" height="922" alt="image" src="https://github.com/user-attachments/assets/68699377-cf11-40fc-bd07-f7359c86b357" />
-Detail:
+
+### Detail:
 <img width="1506" height="921" alt="image" src="https://github.com/user-attachments/assets/b524413d-cc3f-404b-a619-bb174ccdcb71" />
 
 ## List Users

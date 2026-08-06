@@ -45,7 +45,6 @@ The system enables secure document management through:
 
 ## 📄 Document Management
 
-* Upload documents (PDF, DOCX, XLSX, Images)
 * Document version control
 * Category & classification management
 * Metadata management

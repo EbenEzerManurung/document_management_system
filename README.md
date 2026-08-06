@@ -2,7 +2,9 @@
 
 A modern **Enterprise Document Management System (DMS)** built with **Next.js 16.3.0**, **Go (Gin Framework)**, and **MySQL**.
 
-Designed to streamline the entire document lifecycle—from document creation, multi-level approval, digital signatures, advanced QR Code document verification and scanning, version control, and secure archival—through a scalable RESTful architecture and a Progressive Web App (PWA). The system enables fast, secure, and reliable document authentication by allowing users to instantly verify document authenticity and access document information through QR Code scanning.
+Designed to streamline the entire document lifecycle—from document creation and multi-level approval to digital signatures, QR Code-based document verification, version control, and secure archival. Built on a scalable RESTful architecture with Progressive Web App (PWA) capabilities, the system delivers a fast, secure, and responsive experience while enabling users to instantly verify document authenticity through QR Code scanning.
+
+Designed to improve operational efficiency, strengthen document governance, and provide a secure, traceable, and scalable platform for enterprise document management.
 
 ---
 
@@ -13,6 +15,7 @@ Designed to streamline the entire document lifecycle—from document creation, m
 ![Next.js](https://img.shields.io/badge/Next.js-16.3.0-black?style=for-the-badge\&logo=next.js)
 ![React](https://img.shields.io/badge/React-19-blue?style=for-the-badge\&logo=react)
 ![TypeScript](https://img.shields.io/badge/TypeScript-5.7-blue?style=for-the-badge\&logo=typescript)
+![RESTful API](https://img.shields.io/badge/API-RESTful-success?style=for-the-badge)
 ![Go](https://img.shields.io/badge/Go-1.22-00ADD8?style=for-the-badge\&logo=go)
 ![Gin](https://img.shields.io/badge/Gin-Web_Framework-00ADD8?style=for-the-badge)
 ![Tailwind CSS](https://img.shields.io/badge/TailwindCSS-3.4-38BDF8?style=for-the-badge\&logo=tailwind-css)
@@ -67,7 +70,7 @@ The system enables secure document management through:
 
 ## 👥 User & Role Management
 
-* JWT Authentication
+* Secure JWT Authentication
 * Role-Based Access Control (RBAC)
 * User profile management
 * Permission management
@@ -95,7 +98,7 @@ Supported roles:
 
 ## 🔒 Security
 
-* JWT Authentication
+* Secure JWT Authentication
 * Password Hashing (bcrypt)
 * Authorization Middleware
 * Protected REST API
@@ -177,16 +180,16 @@ Responsive for:
 
 ```text
                  Progressive Web App (PWA)
-                          │
-                  Next.js Frontend
-                          │
-                RESTful API (JSON)
-                          │
-                  Go (Gin Framework)
-                          │
-                         GORM
-                          │
-                        MySQL
+                               │
+                        Next.js 16 Frontend
+                               │
+                     RESTful API (JSON over HTTP)
+                               │
+                  Go Backend (Gin Framework)
+                               │
+                            GORM ORM
+                               │
+                             MySQL
 ```
 
 ---

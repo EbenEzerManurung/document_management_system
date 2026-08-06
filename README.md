@@ -35,12 +35,13 @@ The system enables secure document management through:
 * Secure document submission
 * Multi-level approval workflow
 * Digital signature
-* QR Code verification
+* QR Code generation with downloadable PNG format
+* QR Code-based document authentication, verification, and scanning
 * Document version control
 * Role-Based Access Control (RBAC)
-* Audit trail
+* Comprehensive audit trail
 * Progressive Web App (PWA)
-* Complete document lifecycle management
+* Enterprise document lifecycle management
 
 ---
 

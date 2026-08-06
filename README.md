@@ -242,6 +242,10 @@ document_management_system/
 ## Document Approval
 Approve Document:
 <img width="1911" height="789" alt="image" src="https://github.com/user-attachments/assets/df4ee131-45f2-4924-af0c-e8dd3ac92cc2" />
+
+Signature Digital:
+<img width="1783" height="793" alt="image" src="https://github.com/user-attachments/assets/c2be1b04-6dc3-4b58-ac1d-276af281c93f" />
+
 Report Pdf:
 <img width="1777" height="904" alt="image" src="https://github.com/user-attachments/assets/19e22c04-ef7a-44e6-93f2-7a6929597d77" />
 Scan QR Document:

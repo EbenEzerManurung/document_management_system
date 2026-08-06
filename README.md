@@ -207,7 +207,8 @@ backend/
 
 ## Golang REST API
 
-*(Insert Screenshot)*
+<img width="1918" height="997" alt="image" src="https://github.com/user-attachments/assets/7dd36764-f471-44dd-a5ca-a28aac8ebfd3" />
+
 
 ---
 

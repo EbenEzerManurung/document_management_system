@@ -299,6 +299,6 @@ MIT License
 
 # Author
 
-**Eben Ezer Manurung**
+**Eben Nezer Manurung**
 
 Backend Developer • Full Stack Developer

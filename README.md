@@ -1,142 +1,238 @@
- Document Management System (DMS)
-A comprehensive Document Management System built with Next.js 16, Go (Gin), and MySQL — designed for secure document storage, version control, and seamless team collaboration.
+# 📄 Document Management System (DMS)
 
-<div align="center">
-https://img.shields.io/badge/Next.js-16.3.0-000000?style=for-the-badge&logo=next.js&logoColor=white
-https://img.shields.io/badge/React-19.0.0-61DAFB?style=for-the-badge&logo=react&logoColor=white
-https://img.shields.io/badge/Go-1.22-00ADD8?style=for-the-badge&logo=go&logoColor=white
-https://img.shields.io/badge/TailwindCSS-3.4.17-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white
-https://img.shields.io/badge/MySQL-8.0-4479A1?style=for-the-badge&logo=mysql&logoColor=white
-https://img.shields.io/badge/TypeScript-5.7.3-3178C6?style=for-the-badge&logo=typescript&logoColor=white
+A modern enterprise-grade **Document Management System (DMS)** built with **Next.js 16**, **Go (Gin)**, and **MySQL**.  
+Designed to streamline document lifecycle management through secure storage, approval workflows, role-based access control, digital signatures, and audit logging.
 
-</div>
-📑 Table of Contents
-✨ Key Features
+---
 
-🚀 Tech Stack
+## Technology Stack
 
-📊 Database Schema
+<p align="center">
 
-🏗️ Project Structure
+![Next.js](https://img.shields.io/badge/Next.js-16.3.0-black?style=for-the-badge&logo=next.js)
+![React](https://img.shields.io/badge/React-19-blue?style=for-the-badge&logo=react)
+![TypeScript](https://img.shields.io/badge/TypeScript-5.7-blue?style=for-the-badge&logo=typescript)
+![Go](https://img.shields.io/badge/Go-1.22-00ADD8?style=for-the-badge&logo=go)
+![Gin](https://img.shields.io/badge/Gin-Web_Framework-00ADD8?style=for-the-badge)
+![Tailwind CSS](https://img.shields.io/badge/TailwindCSS-3.4-38BDF8?style=for-the-badge&logo=tailwind-css)
+![MySQL](https://img.shields.io/badge/MySQL-8.0-4479A1?style=for-the-badge&logo=mysql)
 
-🛠️ Installation
+</p>
 
-👥 User Roles
+---
 
-🔐 Security Features
+# Overview
 
-📸 Screenshots
+This project demonstrates an enterprise document management workflow commonly found in corporate environments.
 
-🤝 Contributing
+Core business processes include:
 
-📝 License
+- Secure document submission
+- Multi-level approval workflow
+- Digital signature
+- QR Code verification
+- Document versioning
+- Role-Based Access Control (RBAC)
+- Audit trail
+- Document lifecycle management
 
-✨ Key Features
-📄 Document Management
-Upload & Storage – Upload documents in multiple formats (PDF, DOCX, XLSX, images)
+---
 
-Version Control – Track document versions with complete history
+# Key Features
 
-Category Management – Organize documents by categories and tags
+## Document Management
 
-Advanced Search – Full-text search with filters by date, category, status
+- Upload documents (PDF, DOCX, XLSX, Images)
+- Version history
+- Category & document classification
+- Metadata management
+- Advanced search
+- Bulk upload & download
 
-Bulk Operations – Batch upload, download, and delete documents
+---
 
-📊 Dashboard & Analytics
-Real-time dashboard with key metrics (Total Documents, Users, Storage Usage)
+## Approval Workflow
 
-Document activity charts and trends
+- Multi-level approval
+- Approval / Reject with remarks
+- Document status tracking
+- Approval history
+- Revision workflow
 
-Recent uploads and pending approvals
+---
 
-Storage utilization visualization
+## User & Role Management
 
-👥 User Management
-Role-based access control (Super Admin, Admin, User, Guest)
+- JWT Authentication
+- Role-Based Access Control (RBAC)
+- User profile management
+- Activity logs
+- Permission management
 
-User profiles with avatar upload
+Supported roles:
 
-Activity logs and audit trails
+- Super Admin
+- Head Division
+- Staff Division
 
-Password reset and account management
+---
 
-🔄 Approval Workflow
-Document submission and approval process
+## Dashboard
 
-Role-based approval routing
+- Document statistics
+- Pending approvals
+- Recent activities
+- Storage usage
+- User statistics
 
-Rejection with comments
+---
 
-Status tracking (Draft, Pending, Approved, Rejected, Archived)
+## Security
 
-🔒 Security Features
-JWT Authentication with secure token storage
+- JWT Authentication
+- Password hashing (bcrypt)
+- Authorization Middleware
+- Audit Trail
+- Secure File Upload Validation
+- Protected API Routes
 
-Role-Based Access Control (RBAC)
+---
 
-Document Encryption for sensitive files
+## Responsive User Interface
 
-Audit Trail – Complete activity logging
+- Desktop
+- Tablet
+- Mobile
 
-Rate Limiting – Protect against brute force attacks
+Built using
 
-Secure File Upload – MIME type validation and virus scanning
+- Next.js App Router
+- TailwindCSS
+- shadcn/ui
+- Radix UI
 
-📱 Responsive Design
-Fully responsive UI with TailwindCSS
+---
 
-Mobile-first approach
+# Technology Stack
 
-Touch-optimized for tablets and mobile devices
+| Category | Technology |
+|------------|------------|
+| Frontend | Next.js 16 (App Router) |
+| Language | TypeScript |
+| UI Components | shadcn/ui + Radix UI |
+| Styling | Tailwind CSS |
+| Forms | React Hook Form |
+| Validation | Zod |
+| Notifications | React Toastify |
+| Backend | Go (Gin Framework) |
+| ORM | GORM |
+| Database | MySQL |
+| Authentication | JWT + bcrypt |
+| File Upload | Multipart Form Data |
+| API | REST API |
 
-Progressive Web App (PWA) ready
+---
 
-🔍 Document Viewer
-Built-in PDF viewer
+# User Roles
 
-Image preview gallery
+| Role | Responsibilities |
+|------|------------------|
+| Super Admin | Full system administration, user management, document oversight |
+| Head Division | Review, approve/reject documents within the division |
+| Staff Division | Create, edit, and submit documents |
 
-Document metadata display
+---
 
-Full-screen viewing mode
+# Project Architecture
 
-🎨 Modern UI/UX
-Clean, professional interface with shadcn/ui components
+```
+Next.js Frontend
+        │
+ REST API (JSON)
+        │
+ Go (Gin Framework)
+        │
+      GORM
+        │
+      MySQL
+```
 
-Dark/Light mode support
+---
 
-Loading skeletons for better UX
+# Project Structure
 
-Toast notifications for real-time feedback
+```
+frontend/
+│
+├── app/
+├── components/
+├── hooks/
+├── lib/
+├── services/
+├── types/
+└── public/
 
-Export data to Excel and PDF formats
+backend/
+│
+├── controllers/
+├── middleware/
+├── models/
+├── repositories/
+├── routes/
+├── services/
+└── utils/
+```
 
-🚀 Tech Stack
-Category	Technology	Version
-Frontend	Next.js (App Router)	16.3.0
-Frontend UI	React	19.0.0
-Styling	TailwindCSS	3.4.17
-Components	shadcn/ui (Radix UI)	Latest
-Forms	React Hook Form	7.54.0
-Validation	Zod	3.24.0
-State Management	Context API + React Query	-
-Notifications	React Toastify	11.0.0
-Backend	Go (Gin Framework)	1.22
-Database	MySQL	8.0
-ORM	GORM	1.25
-Authentication	JWT + bcrypt	v5.x
-PDF Generation	Go PDF Libraries 1.22
+---
 
-👥 User Roles
-Role	Permissions
-Super Admin	Full system access, user management, system configuration
-Head Division	Document management, user management (in Division), approval authority
-Staff Division	Create documents, edit own documents, view documents.
+# Screenshots
 
-# \# screenshots:
-## API Golang
-<img width="1918" height="997" alt="image" src="https://github.com/user-attachments/assets/7dd36764-f471-44dd-a5ca-a28aac8ebfd3" />
+## Login
 
-## Frontend:NEXTJS
-<img width="681" height="181" alt="image" src="https://github.com/user-attachments/assets/42a0e187-f26f-4bd5-8da3-dda7d526d2b0" />
+*(Insert Screenshot)*
+
+---
+
+## Dashboard
+
+*(Insert Screenshot)*
+
+---
+
+## Document Approval
+
+*(Insert Screenshot)*
+
+---
+
+## Golang REST API
+
+*(Insert Screenshot)*
+
+---
+
+# Future Enhancements
+
+- Email notification
+- Document expiration reminder
+- OCR support
+- Elasticsearch integration
+- Two-Factor Authentication (2FA)
+- Microsoft Office Preview
+- Real-time notifications
+- Docker deployment
+- CI/CD Pipeline
+
+---
+
+# License
+
+MIT License
+
+---
+
+# Author
+
+**Eben Ezer Manurung**
+
+Backend Developer • Full Stack Developer

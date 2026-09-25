@@ -291,10 +291,9 @@ document_management_system/
 
 ---
 
-# License
+## 📄 License
 
-MIT License
-
+This project is licensed under the **MIT License** — see the [LICENSE](https://tlo.mit.edu/resources/mit-github) file for details.
 ---
 
 # Author
